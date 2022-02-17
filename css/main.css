@@ -223,6 +223,7 @@
 }
 /* CONTAINER */
 .get-in-touch {
+<<<<<<< HEAD
   width: 100%;
   min-height: 517px;
   background-image: url(get-in-touch_image/get-in-touch_bg.png);
@@ -269,6 +270,240 @@
 /* RESPONSIVE COLUMN WITH MEDIA */
 @media screen and (max-width: 1000px) {
   .get-in-touch_info {
+=======
+    width: 100%;
+    min-height: 517px;
+    background-image: url(get-in-touch_image/get-in-touch_bg.png);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .get-in-touch .get-in-touch_info-text {
+    padding-top: 79px;
+    padding-bottom: 73px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  .line {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.09);
+    width: 100px;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .underline {
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid #aaa;
+    margin: 0 auto;
+  }
+
+  .container {
+      width: 70%;
+      margin: 0 auto;
+      font-family: sans-serif;
+  }
+
+  .section .section-title {
+      font-size: 2rem;
+      text-align: center;
+      color:  #333333;
+      text-transform: uppercase;
+      margin: 4rem 0 2rem 0;
+  }
+
+  .section .cards {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 3rem 0;
+  }
+
+  .section .cards .card {
+      width: 32%;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+
+  .card .card-header {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: #F5F5F5;
+  }
+
+  .card .card-header > img {
+      width: 40%;
+  }
+
+  .section .cards .card .card-body {
+      padding: 0 0.8rem;
+      color: #333333;
+  }
+
+  .section .cards .card .card-body .card-title {
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 1.6rem 0 ;
+      text-transform: uppercase;
+      font-weight: normal;
+  }
+
+  .section .cards .card .card-body .card-text {
+      font-size: 1rem;
+      text-align: center;
+      line-height: 140%;
+  }
+
+
+  /* ROW */
+  .get-in-touch_info {
+    width: 960px;
+    min-height: 260px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+  }
+  /* COLUMN */
+  .column_touch {
+    width: 33.3%;
+    min-height: 238px;
+  }
+  /* RESPONSIVE COLUMN WITH MEDIA */
+  @media screen and (max-width: 1000px) {
+    html {
+      font-size: 15px;
+    }
+
+    .section.container {
+        width: 80%;
+    }
+    .get-in-touch_info {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 14.5px;
+    }
+
+    .section .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+
+    .section .cards .card {
+        width: 48% ;
+        margin: 0 0.4rem;
+    }
+
+    .section .cards .card .card-body {
+        padding-bottom: 2rem;
+    }
+
+    .column_touch {
+      width: 50%;
+      margin-bottom: 5%;
+    }
+    .column_touch_address {
+      order: 1;
+    }
+    .column_touch_social-media {
+      order: 2;
+    }
+    .column_touch_email {
+      order: 3;
+    }
+  }
+
+  
+@media screen and (max-width: 576px) {
+  .section.container {
+      width: 90%;
+  }
+  .section .cards .card {
+      width: 100% ;
+      margin: 0 0.4rem;
+  }
+
+  .section .section-title {
+      line-height: 140%;
+      margin: 4rem 2rem 2rem 2rem;
+      font-size: 1.5rem;
+  }
+}
+
+  @media screen and (max-width: 481px) {
+    .column_touch {
+      width: 100%;
+      margin-bottom: 10%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    }
+    .column_touch_address {
+      order: 1;
+    }
+    .column_touch_social-media {
+      order: 3;
+    }
+    .column_touch_email {
+      order: 2;
+    }
+  }
+  /* COLUMN ICON IMG STYLES */
+  .column_touch_address img {
+    margin-bottom: 26px;
+  }
+  .column_touch_email img {
+    margin-bottom: 34px;
+  }
+  .column_touch_social-media .heart-img {
+    margin-bottom: 28px;
+  }
+  /* COLUMN H1 STYLES */
+  .column_touch h1 {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  /* COLUMN P TAG STYLES */
+  .column_touch p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #212121;
+  }
+  /* DIFFERENT STYLES */
+  .column_touch_email p:nth-child(4) {
+    margin-bottom: 22px;
+  }
+  .column_touch_social-media div {
+    margin-bottom: 11px;
+  }
+  .column_touch_social-media p {
+    display: inline-block;
+  }
+  footer {
+>>>>>>> c8f72741aa52fdce1c4c66e66e935b8d1a96f524
     width: 100%;
   }
 }
