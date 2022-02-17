@@ -133,6 +133,74 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .underline {
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid #aaa;
+    margin: 0 auto;
+  }
+
+  .container {
+      width: 70%;
+      margin: 0 auto;
+      font-family: sans-serif;
+  }
+
+  .section .section-title {
+      font-size: 2rem;
+      text-align: center;
+      color:  #333333;
+      text-transform: uppercase;
+      margin: 4rem 0 2rem 0;
+  }
+
+  .section .cards {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 3rem 0;
+  }
+
+  .section .cards .card {
+      width: 32%;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+
+  .card .card-header {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: #F5F5F5;
+  }
+
+  .card .card-header > img {
+      width: 40%;
+  }
+
+  .section .cards .card .card-body {
+      padding: 0 0.8rem;
+      color: #333333;
+  }
+
+  .section .cards .card .card-body .card-title {
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 1.6rem 0 ;
+      text-transform: uppercase;
+      font-weight: normal;
+  }
+
+  .section .cards .card .card-body .card-text {
+      font-size: 1rem;
+      text-align: center;
+      line-height: 140%;
+  }
+
+
   /* ROW */
   .get-in-touch_info {
     width: 960px;
@@ -151,11 +219,36 @@
   }
   /* RESPONSIVE COLUMN WITH MEDIA */
   @media screen and (max-width: 1000px) {
+    html {
+      font-size: 15px;
+    }
+
+    .section.container {
+        width: 80%;
+    }
     .get-in-touch_info {
       width: 100%;
     }
   }
   @media screen and (max-width: 768px) {
+    html {
+      font-size: 14.5px;
+    }
+
+    .section .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+
+    .section .cards .card {
+        width: 48% ;
+        margin: 0 0.4rem;
+    }
+
+    .section .cards .card .card-body {
+        padding-bottom: 2rem;
+    }
+
     .column_touch {
       width: 50%;
       margin-bottom: 5%;
@@ -170,6 +263,24 @@
       order: 3;
     }
   }
+
+  
+@media screen and (max-width: 576px) {
+  .section.container {
+      width: 90%;
+  }
+  .section .cards .card {
+      width: 100% ;
+      margin: 0 0.4rem;
+  }
+
+  .section .section-title {
+      line-height: 140%;
+      margin: 4rem 2rem 2rem 2rem;
+      font-size: 1.5rem;
+  }
+}
+
   @media screen and (max-width: 481px) {
     .column_touch {
       width: 100%;
